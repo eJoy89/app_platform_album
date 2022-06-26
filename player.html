@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+
+
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/player.css">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/player.js"></script>
+
+</head>
+<body>
+    <section class="container">
+        <div class="player_wrap">
+
+            <div class="player_top">
+                <div class="close_icon">
+                    <a href="javascript:location.href='./album.html'">
+                        <img src="./icons/back_icon_white.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="player_main">
+                <div class="song_title">
+                    <h2 style="font-size:2.3rem;color:rgba(255,255,255,0.8);font-family:'Gowun Dodum';"><em>DIlemma</em></h2>
+                    <p style="font-size:0.9rem;color:rgba(255,255,255,0.8);font-family:'Noto Sans KR';"><em>Apink (에이핑크)</em></p>
+                </div>
+                <div class="cd_play">
+                    <div class="cd_img">
+                        <img src="./img/cd_new.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="player_control">
+                <div class="controller">
+                    <div class="rotation">
+                        <div class="rotation_icon">
+                            <!-- <span class="material-symbols-outlined">
+                                repeat
+                            </span> -->
+                            <!-- <span class="material-symbols-outlined">
+                                repeat_one
+                            </span> -->
+                            <img src="./icons/repeat_icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="pro_bar">
+                            
+                        </div>
+                    </div>
+                    <div class="Shuffle">
+                        <div class="shuffle_icon" style="position:relative;">
+                            <!-- <span class="material-symbols-outlined">
+                                shuffle
+                            </span> -->
+                            <img src="./icons/shuffle_icon.svg" alt="" id="shuffle_off" style="position:absolute;">
+                            <img src="./icons/shuffle_icon_on.png" alt="" id="shuffle_on" style="position:absolute;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title_play">
+                <div class="song_pre song_icon">
+                    <a href="#none"><img src="./icons/back_music.svg" alt=""></a>
+                </div>
+                <div class="song_play song_icon">
+                    <a href="#none" style="position:absolute;"><img src="./icons/play_music.svg" alt="" id="s_play"></a>
+                    <a href="#none" style="height:29px;position:absolute;left:-1px;top:-17px;"><img src="./icons/pause.svg" alt="" id="s_stop"></a>
+                </div>
+                <div class="song_next song_icon">
+                    <a href="#none"><img src="./icons/forward_music.svg" alt=""></a>
+                </div>
+                <!-- <div></div> -->
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

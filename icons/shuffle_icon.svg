@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <g id="그룹_155" data-name="그룹 155" transform="translate(-578 -1331)">
+    <rect id="사각형_24523" data-name="사각형 24523" width="52" height="52" transform="translate(578 1331)" fill="#fff" opacity="0"/>
+    <g id="그룹_154" data-name="그룹 154" transform="translate(581.232 1343.412)">
+      <path id="패스_72" data-name="패스 72" d="M-9918.5-11770.742h20.117l11.768,15.845h8.044" transform="translate(9918.5 11776.407)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_73" data-name="패스 73" d="M-9918.5-11754.9h20.117l11.768-15.845h8.044" transform="translate(9918.5 11776.407)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="다각형_1" data-name="다각형 1" transform="translate(45.535 0) rotate(90)" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 10.72300243377686 5.35572338104248 L 0.6081140637397766 5.35572338104248 L 5.665558338165283 0.3516963720321655 L 10.72300243377686 5.35572338104248 Z" stroke="none"/>
+        <path d="M 5.665558338165283 0.7033891677856445 L 1.216229438781738 5.10572338104248 L 10.11488723754883 5.10572338104248 L 5.665558338165283 0.7033891677856445 M 5.665558338165283 3.814697265625e-06 L 11.3311185836792 5.60572338104248 L -1.9073486328125e-06 5.60572338104248 L 5.665558338165283 3.814697265625e-06 Z" stroke="none" fill="#fff"/>
+      </g>
+      <g id="다각형_2" data-name="다각형 2" transform="translate(45.535 15.845) rotate(90)" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 10.72300243377686 5.35572338104248 L 0.6081140637397766 5.35572338104248 L 5.665558338165283 0.3516963720321655 L 10.72300243377686 5.35572338104248 Z" stroke="none"/>
+        <path d="M 5.665558338165283 0.7033891677856445 L 1.216229438781738 5.10572338104248 L 10.11488723754883 5.10572338104248 L 5.665558338165283 0.7033891677856445 M 5.665558338165283 3.814697265625e-06 L 11.3311185836792 5.60572338104248 L -1.9073486328125e-06 5.60572338104248 L 5.665558338165283 3.814697265625e-06 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

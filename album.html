@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>album</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/album.css">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/album.js"></script>
+
+</head>
+<body>
+    <section style="position: relative;">
+        <div class="album_top">
+            <div class="album_page">
+                <span>Album</span>
+            </div>
+            <div class="list">
+                <a href="#none">
+                    <img src="./icons/play_list_white.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="album_youtube">
+                <!-- <iframe width="1500" height="315" src="https://www.youtube.com/embed/w2P9NT8P8qA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <iframe width="1300" height="315" src="https://www.youtube.com/embed/IxCb-GnpM_A?autoplay=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="album_intro">
+            <div class="album_cover">
+                <div class="cover_img">
+                    <img src="./img/album_4.jpg" alt="">
+                </div>
+            </div>
+            <div class="album_int">
+                <div class="album_int_top"><p style="font-size: 0.8rem;">조유리</p></div>
+                <div class="album_int_bot"><p>
+                    <MARQUEE behavior="scroll" scrolldelay="100">Op.22 Y-Waltz : in Major</MARQUEE></p>
+                </div>
+            </div>
+            <div class="favourite">
+                <div class="fav_icon" id="fav_icon_f">
+                    <img src="./icons/fav_off.svg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="track">
+        <div class="music_track">
+            <div class="track_top">
+                <div id="track_up_btn">
+                    <a href="#none"><img src="./icons/album_swipe.png" alt="">
+                    </a>
+                </div>
+                <div class="album_open_btn">
+                    <button>ALBUM OPEN</button>
+                </div>
+            </div>
+            <div class="track_main">
+                <div class="list_top_fir">
+                    <span>트랙</span>
+                </div>
+                <div class="list_top_sec">
+                    <div class="list_top_left" id="check_all">
+                        <span><img src="./icons/check_off.svg" alt="" style="width: 12px;"></span>
+                        <span>전체선택</span>
+                    </div>
+                    <div class="list_top_right" onclick="allPlay()">
+                        <span><img src="./icons/play_track.svg" alt="" style="width: 8px"></span>
+                        <span>전체듣기</span>
+                    </div>
+                </div>
+
+
+                <div class="list_main">
+                    <div class="music_box">
+                        <div class="content_box" id="content_check1" name="content_box" musicName="Round and Around">
+                            <div class="img_box">
+                                <img src="./img/album_4.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="title">
+                                <div class="song">
+                                    <a href="#none">Round and Around</a>
+                                </div>
+                                <div class="artist">
+                                    <a href="#none">조유리</a>
+                                </div>
+                            </div>
+                
+                            <div class="play_time">
+                                <a href="#none">3:00</a>
+                                <div class="moving">
+                                    <img src="./sortable_playList.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music_box" >
+                        <div class="content_box" id="content_check2" name="content_box" musicName="러브 쉿!">
+                            <div class="img_box">
+                                <img src="./img/album_4.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="title">
+                                <div class="song">
+                                    <a href="#none">러브 쉿!</a>
+                                </div>
+                                <div class="artist">
+                                    <a href="#none">조유리</a>
+                                </div>
+                            </div>
+                
+                            <div class="play_time">
+                                <a href="#none">3:00</a>
+                                <div class="moving">
+                                    <img src="./sortable_playList.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music_box" >
+                        <div class="content_box" id="content_check3" name="content_box" musicName="Rolla Skates">
+                            <div class="img_box">
+                                <img src="./img/album_4.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="title">
+                                <div class="song">
+                                    <a href="#none">Rolla Skates</a>
+                                </div>
+                                <div class="artist">
+                                    <a href="#none">조유리</a>
+                                </div>
+                            </div>
+                
+                            <div class="play_time">
+                                <a href="#none">3:00</a>
+                                <div class="moving">
+                                    <img src="./sortable_playList.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music_box" >
+                        <div class="content_box" id="content_check4" name="content_box" musicName="This Time">
+                            <div class="img_box">
+                                <img src="./img/album_4.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="title">
+                                <div class="song">
+                                    <a href="#none">This Time</a>
+                                </div>
+                                <div class="artist">
+                                    <a href="#none">조유리</a>
+                                </div>
+                            </div>
+                
+                            <div class="play_time">
+                                <a href="#none">3:00</a>
+                                <div class="moving">
+                                    <img src="./sortable_playList.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music_box" >
+                        <div class="content_box" id="content_check5" name="content_box" musicName="Opening">
+                            <div class="img_box">
+                                <img src="./img/album_4.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="title">
+                                <div class="song">
+                                    <a href="#none">Opening</a>
+                                </div>
+                                <div class="artist">
+                                    <a href="#none">조유리</a>
+                                </div>
+                            </div>
+                
+                            <div class="play_time">
+                                <a href="#none">3:00</a>
+                                <div class="moving">
+                                    <img src="./sortable_playList.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add_play_popup">
+        <div class="popup_play pop_up_icon"  style="margin-right: 70px;">
+            <a href="javascript:location.href='./player.html'"><img src="./icons/play_music_B.svg" alt=""></a>
+            <span>재생</span>
+        </div>
+        <div class="popup_list pop_up_icon">
+            <a href="javascript:addSelectedPlayList();"><img src="./icons/play_list_add_black.png" alt=""></a>
+            <span>추가</span>
+        </div>
+    </div>
+    </div>
+
+
+    
+    <div class="play_list">
+        <div class="play_list_list" id="add_play_up">
+           <a href="#none"><img src="./icons/play list icon.svg" alt=""></a>
+        </div>
+        <a href="javascript:location.href='./player.html'" class="player_call">
+            <div class="play_name">
+                <MARQUEE behavior="scroll" scrollamount="6">러브 쉿! - 조유리</MARQUEE>
+            </div>
+            <div class="play_control">        
+                <div class="play_back music_icon">
+                    <img src="./icons/music_back_icon.svg" alt="">
+                </div>
+                <div class="play_play music_icon" style="width: 22px; height: 22px; margin-top: 1px;">
+                    <img src="./icons/music_play_icon.svg" alt="">
+                </div>
+                <div class="play_next music_icon">
+                    <img src="./icons/music_forward_icon.svg" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="add_play">
+        <div class="add_play_top">
+            <div class="add_play_title"><span>재생목록</span></div>
+            <div class="add_play_close_icon"><a href="#none" id="add_play_close"><img src="./icons/back_icon_black.png" alt="" style="transform: rotate(270deg);"></a></div>
+        </div>
+        <div class="add_play_mid">
+            <div class="search_icon">
+                <img src="./icons/search_icon.svg" alt="">
+            </div>
+            <div class="text_box"><input type="text" placeholder="검색" class="input_box"></div>
+        </div>
+        <div class="add_play_main">
+            <div class="add_play_main_up">
+                <div class="list_up" id="list_up_f"><a href="#none">내 정렬순</a></div>
+                <div class="list_edit" onclick="clearShit()"><a href="#none">전체삭제</a></div>
+            </div>
+            <div class="add_play_main_content" id="add_play_main_content">
+
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+
+
+
+    <footer>
+        <nav>
+            <div class="main_nav">
+                <ul>
+                    <li class="nav_item">
+                        <a href="javascript:location.href='./index.html'">
+                            <img src="./icons/home_off.svg" alt="">
+                            <span>home</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="javascript:location.href='./album.html'">
+                            <img src="./icons/album_off.svg" alt="">
+                            <span>album</span>
+                        </a>
+                    </li>
+                    <li class="nav_item_QR">
+                        <a href="#none">
+                            <img src="./icons/QR.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#none">
+                            <img src="./icons/shop_off.svg" alt="">
+                            <span>shop</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="javascript:location.href='./MyPage.html'">
+                            <img src="./icons/my_off.svg" alt="">
+                            <span>my</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+
+       
+</body>
+</html>

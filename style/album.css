@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url();
+}
+@font-face {
+    font-family: 'Nanum Gothic', sans-serif;
+    src: url();
+}
+@font-face {
+    font-family: 'Gowun Dodum', sans-serif;    
+    src: url();
+}
+
+
+.album_top{
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    color: #ffff;
+    font-family: 'Nanum Gothic';
+    /* background-color: red; */
+}
+
+.album_page span{
+    font-size: 1.25rem;
+}
+.list{
+    width: 25px;
+    height: 25px;
+}
+
+.video{
+    width: 100%;
+    margin-left: -450px;
+}
+
+.album_youtube iframe{
+    height: 80vh;
+}
+
+
+
+/* youtube */
+.ytp-title-channel{
+    display: none;
+}
+.ytp-title{
+    display: none;
+}
+.ytp-watch-later-title{
+    display: none;
+}
+
+
+
+
+.track{
+    border-radius: 25px 25px 0 0;
+    position: fixed;
+    width: 100%;
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+
+.track.active{
+    transform: translateY(-90%);
+}
+
+
+.music_track{
+    width: 100%;
+    height: 60vh;
+    border-radius: 25px 25px 0 0;
+    background-color: #ffff;
+    position: relative;
+    z-index: 99999;
+    transition: 0.5s;
+}
+
+
+
+.list_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+}
+
+
+
+
+
+.track_top{
+    width: 100%;
+    height: 6vh;
+    border-radius: 25px 25px 0 0;
+    background-color: #ffff;
+    position: absolute;
+    z-index: 99999999;
+    transition: 0.5s;
+}
+
+#track_up_btn{
+    width: 100%;
+    height: 35%;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+}
+
+#track_up_btn > a{
+    display: inline-block;
+    width: 70px;
+    height: auto;
+}
+
+
+.album_open_btn{
+    width: 100%;
+    height: calc(100% - 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.album_open_btn > button{
+    width: 45vw;
+    height: 3vh;
+    border-radius: 15px;
+    background-color: #EE6F2E;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+}
+
+.track_main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+}
+.list_top_fir{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px;
+}
+.list_top_sec{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 15px 20px;
+    font-size: 0.8rem;
+}
+
+
+
+
+.play_list{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 10%;
+    border-top: 1px solid rgba(128,128,128,0.3);
+    background-color: #ffff;
+    overflow-x: auto;
+    z-index: 999999;
+    transition: all 0.3s ease;
+}
+
+.play_name{
+    width: 60vw;
+    font-size: 0.8rem;
+    font-family: 'Gowun Dodum';
+    font-weight: 800;
+}
+
+
+
+.play_control{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.play_list_list{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+}
+.play_list_list a{
+    display: inline-block;
+}
+
+.player_call{
+    width:100%;
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music_icon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+
+.album_intro{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 220px;
+    /* transform: translateY(-180%); */
+    /* background-color: gray; */
+}
+.album_cover{
+    width: 20%;
+    height: auto;
+    padding-left: 15px;
+}
+.cover_img{
+    width: 60px;
+    height: 60px;
+}
+
+.album_int{
+    width: 200px;
+    height: 100%;
+    padding-left: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #ffff;
+}
+.album_int_top{
+    width: 100%;
+}
+.album_int_bot{
+    width: 100%;
+}
+.favourite{
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.fav_icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+
+
+
+
+.add_play{
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(50%);
+    background-color: #ffff;
+    z-index: 999999999;
+    transition: 0.5s;
+}
+.add_play.active{
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+
+
+.add_play_top{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 1rem;
+}
+.add_play_title{
+    width: 80vw;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 25px;
+}
+
+.add_play_close_icon{
+    width: 25px;
+}
+
+
+.add_play_mid{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    border: 2px solid #EE6F2E;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+.search_icon{
+    width: 25px;
+    height: 25px;
+}
+.text_box{
+    width: calc(100% - 40px);
+}
+.input_box{
+    width: 100%;
+    height: 3vh;
+    padding-left: 15px;
+    font-size: 1rem;
+    border: 0;
+}
+
+.add_play_main{
+    width: 100%;
+    height: 90%;
+    font-size: 0.9rem;
+    background-color: #ffff;
+}
+.add_play_main_up{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0 30px 0;
+}
+.list_up{
+    width: 60vw;
+    text-align: center;
+}
+
+.add_play_main_content{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+/* pop-up */
+
+
+.add_play_popup{
+    display: none;
+}
+
+
+.add_play_popup.active{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EE6F2E;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+}
+
+
+.pop_up_icon{
+    width: 70px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Nanum Gothic';
+}
+
+
+.pop_up_icon a{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+.pop_up_icon a img{
+    width: 25px;
+    height: 30px;
+    object-fit: unset;
+}
+.pop_up_icon span{
+    width: 100%;
+    font-size: 1rem;
+    color: #202020;
+    text-align:center;
+}
+
+
+
+
+
+
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    border-top: 1px solid rgba(128,128,128,0.3);
+    background-color: #ffff;
+    z-index: 999999;
+}
+
+footer > nav{
+    width: 100%;
+    height: 100%;
+}
+footer > nav > .main_nav{
+    width: 100%;
+    height: 100%;
+}
+
+.main_nav > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+.main_nav > ul > .nav_item{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.main_nav > ul > .nav_item_QR{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_nav > ul > .nav_item a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_nav > ul > .nav_item_QR a{
+    width: 45px;
+    height: 45px;
+}
+
+.main_nav > ul > .nav_item a span{
+    font-size: 0.9rem;
+}
+
+.content_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: ; */
+    width: 100%;
+    height: 55px;
+    padding: 30px 20px;
+    font-family: "Noto Sans KR";
+}
+
+/* 토글 */
+#content_check1.active{
+    background-color: beige;
+}
+#content_check2.active{
+    background-color: beige;
+}
+#content_check3.active{
+    background-color: beige;
+}
+#content_check4.active{
+    background-color: beige;
+}
+#content_check5.active{
+    background-color: beige;
+}
+
+
+.img_box{
+    width: 45px;
+    height: auto;
+}
+.img_box img{
+    display: block;
+}
+
+.moving{
+    display: none;
+}
+
+.title{
+    width: 65vw;
+}
+
+.song{
+    font-size: 0.8rem;
+}
+.artist{
+    font-size: 0.8rem;
+}
+.play_time{
+    font-size: 0.8rem;
+}
