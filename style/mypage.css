@@ -115,13 +115,12 @@
 .top_b a{
     width: 75px;
     height: 25px;
-    /* margin: 0px 0px 45px 10px; */
-    /* border: 1px solid; */
+    margin-top: 20px;
     background-color:rgba(238, 111, 46,0.8);
     border-radius: 20px;
     text-align: center;
     font-size: 0.8rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     font-family: 'Noto Sans KR';
     color: #ffff;
 }
