@@ -115,7 +115,7 @@
 .top_b a{
     width: 75px;
     height: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color:rgba(238, 111, 46,0.8);
     border-radius: 20px;
     text-align: center;
@@ -123,6 +123,9 @@
     line-height: 1.5rem;
     font-family: 'Noto Sans KR';
     color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
