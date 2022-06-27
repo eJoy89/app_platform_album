@@ -72,8 +72,10 @@
     align-items: center;
 }
 .cd_img{
+	width: 75%;
+	height: auto;
     /* width: 350px; */
-    height: 35vh;
+    /* height: 35vh; */
     display: inline-block;
     /* margin-bottom: 115px; */
     /* transform-style: preserve-3d;
